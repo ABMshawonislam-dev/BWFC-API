@@ -1,6 +1,8 @@
 const express = require("express");
+var cors = require("cors");
 const app = express();
 
+app.use(cors());
 // navbar api data start
 
 app.get("/navbar", function (req, res) {
